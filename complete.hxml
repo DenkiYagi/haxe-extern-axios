@@ -1,0 +1,8 @@
+-cp src
+-lib externtype
+-lib hxnodejs
+js.axios.Axios
+-js dist/dummy.js
+-debug
+--no-inline
+--no-output

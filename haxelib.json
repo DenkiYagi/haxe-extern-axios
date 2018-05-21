@@ -1,0 +1,15 @@
+{
+    "name": "axios-extern",
+    "url": "https://github.com/DenkiYagi/haxe-extern-axios",
+    "description": "Haxe extern definitions for Axios",
+    "license": "Apache",
+    "version": "0.17.0",
+    "releasenote": "",
+    "classPath": "src",
+    "contributors": ["terurou"],
+    "tags": ["js", "nodejs", "axios", "web", "http", "extern"],
+    "dependencies": {
+        "externtype": "",
+        "hxnodejs": ""
+    }
+}
