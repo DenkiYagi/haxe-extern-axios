@@ -8,7 +8,7 @@ import js.html.ArrayBufferView;
 import js.html.FormData;
 import js.html.Blob;
 import js.html.ProgressEvent;
-#if node
+#if nodejs
 import js.node.Buffer;
 import js.node.Stream;
 #end
@@ -142,7 +142,7 @@ typedef AxiosRequestConfig = {
      * - Node only: Stream, Buffer
      */
     @:optional var data:
-        #if node Mixed7<String, {}, ArrayBuffer, ArrayBufferView, URLSearchParams, Stream<Dynamic>, Buffer>
+        #if nodejs Mixed7<String, {}, ArrayBuffer, ArrayBufferView, URLSearchParams, Stream<Dynamic>, Buffer>
         #else Mixed7<String, {}, ArrayBuffer, ArrayBufferView, URLSearchParams, FormData, Blob>
         #end;
     /**
@@ -217,7 +217,7 @@ typedef AxiosRequestConfig = {
      * f both are specified, `socketPath` is used.
      */
     @:optional var socketPath: String;
-    #if node
+    #if nodejs
     /**
      * `httpAgent` and `httpsAgent` define a custom agent to be used when performing http
      * and https requests, respectively, in node.js. This allows options to be added like
