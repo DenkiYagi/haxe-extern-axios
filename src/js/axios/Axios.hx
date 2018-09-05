@@ -306,6 +306,7 @@ abstract AxiosError(Error) from Error to Error {
     public var code(get, never): Null<String>;
     public var request(get, never): Null<Dynamic>;
     public var response(get, never): Null<AxiosResponse>;
+    public var isAxiosError(get, never): Bool;
 
     inline function get_config() {
         return untyped this.config;
@@ -321,5 +322,9 @@ abstract AxiosError(Error) from Error to Error {
 
     inline function get_response() {
         return untyped this.response;
+    }
+
+    inline function get_isAxiosError() {
+        return untyped this.isAxiosError;
     }
 }

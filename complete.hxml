@@ -1,6 +1,6 @@
 -cp src
 -lib externtype
--lib hxnodejs
+# -lib hxnodejs
 js.axios.Axios
 -js dist/dummy.js
 -debug
